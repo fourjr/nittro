@@ -1,0 +1,2 @@
+startSpeech = "";
+startCreated = -1;

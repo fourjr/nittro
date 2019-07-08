@@ -2,7 +2,7 @@
     "id": "1c10978a-020a-4b4a-9a2c-2ddce7f11da2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_hospital",
+    "name": "obj_supermarket",
     "eventList": [
         
     ],
