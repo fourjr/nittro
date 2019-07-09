@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "041ae733-d3ae-4370-8c5b-05efecc421ed",
+            "Value": {
+                "id": "ef932e5b-ff10-4f6e-a00f-21388488b165",
+                "resourcePath": "rooms\\rm_conversation\\rm_conversation.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0576f34f-43ea-46ba-a8e9-335673434030",
             "Value": {
                 "id": "6b05ec7f-4741-4f6d-b264-65112e22beda",
@@ -51,6 +59,14 @@
             "Value": {
                 "id": "0564df9a-28e1-4e58-82f3-43b5e8e5a6a8",
                 "resourcePath": "sprites\\spr_elderly02\\spr_elderly02.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0f624d1d-a100-4a3b-8c33-7e6437b5443e",
+            "Value": {
+                "id": "18afde04-8b6e-49f0-a824-e900f1b186a0",
+                "resourcePath": "sprites\\spr_chats_background\\spr_chats_background.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -87,11 +103,35 @@
             }
         },
         {
+            "Key": "2fa92b61-74ad-49a0-95f0-bce6ad94b8dc",
+            "Value": {
+                "id": "964966c9-c30a-45da-81f3-233ce24904d7",
+                "resourcePath": "views\\2fa92b61-74ad-49a0-95f0-bce6ad94b8dc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "32642383-ef18-4292-a81e-a1be4f14a837",
             "Value": {
                 "id": "4c367192-50ec-43c5-9e91-8aea1738f199",
                 "resourcePath": "sprites\\spr_book_background\\spr_book_background.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "39241211-83b1-4025-a611-0659fe860502",
+            "Value": {
+                "id": "6bf5671e-69c7-46c2-abd5-5495db171783",
+                "resourcePath": "views\\39241211-83b1-4025-a611-0659fe860502.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3e3af137-9a6c-496e-a801-965d553cdd34",
+            "Value": {
+                "id": "bdeca3c8-39e6-4b31-96ce-2ded5ec38bc1",
+                "resourcePath": "views\\3e3af137-9a6c-496e-a801-965d553cdd34.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -131,6 +171,14 @@
             "Value": {
                 "id": "e483cfa0-5a5e-4c65-979d-48f0ff7b31e1",
                 "resourcePath": "views\\54d3011c-05f4-48bd-86aa-0e631a9aaffe.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5aa6b6bf-291e-4259-96d0-3f3b0b4c7b50",
+            "Value": {
+                "id": "fdd0f75e-a1f6-4711-8030-b8e7ecb2ad9d",
+                "resourcePath": "views\\5aa6b6bf-291e-4259-96d0-3f3b0b4c7b50.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -247,6 +295,14 @@
             }
         },
         {
+            "Key": "82c2bdfc-796a-47d7-99e6-401ff772dd4d",
+            "Value": {
+                "id": "590507df-968d-4507-852c-7f68dad918e6",
+                "resourcePath": "objects\\obj_messaging_app\\obj_messaging_app.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "91736501-29b4-4679-bfe7-2bce403af000",
             "Value": {
                 "id": "4ac1241b-3994-473e-b6bf-f00944d72ad9",
@@ -279,6 +335,14 @@
             }
         },
         {
+            "Key": "9b46b17e-ca17-44d4-b301-c02d62c18db1",
+            "Value": {
+                "id": "d1f3361b-90d6-49e7-98d0-790055ca96f5",
+                "resourcePath": "rooms\\rm_phone\\rm_phone.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "a7884b8e-d8f6-49a2-8429-01676b21e42d",
             "Value": {
                 "id": "002940ff-b023-4bf6-b236-117fbd8a7e22",
@@ -308,6 +372,14 @@
                 "id": "5afa2adf-e47f-45e4-9246-d47a3cb14b3a",
                 "resourcePath": "objects\\obj_arrow_right\\obj_arrow_right.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bdaeafb0-a64a-471a-8354-d74de7ec6659",
+            "Value": {
+                "id": "f1fb8332-8f9f-4e2f-b4e3-5d39e500e5b0",
+                "resourcePath": "sprites\\spr_phone_background\\spr_phone_background.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -348,6 +420,14 @@
                 "id": "d5a70327-08d6-483b-9a96-c8c63c00a2cd",
                 "resourcePath": "rooms\\rm_shop\\rm_shop.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "cb01b607-e377-45d9-955d-11a8066cdbf8",
+            "Value": {
+                "id": "01531a0e-23e0-439a-8c75-920635f14759",
+                "resourcePath": "sprites\\spr_messaging_app\\spr_messaging_app.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -404,6 +484,14 @@
                 "id": "a9cee33b-d025-4472-8406-bd9c1aee5c50",
                 "resourcePath": "sprites\\spr_background\\spr_background.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d649072f-7e15-42df-8e13-3f8a70f26a9e",
+            "Value": {
+                "id": "03e34dac-5686-4902-925f-3669a489bcb1",
+                "resourcePath": "rooms\\rm_chats\\rm_chats.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
