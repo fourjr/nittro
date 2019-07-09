@@ -4,19 +4,28 @@
 
 draw_set_font(fnt_courier);
 
-var y1 = y - 70;
+if (!checkedAngle) {
+	if (image_angle % 180 != 0) {
+		var temp = spr_height;
+		spr_height = spr_width;
+		spr_width = temp;
+	}
+	checkedAngle = true;
+}
+
+var y1 = y - (spr_height / 2 + 45)
 
 var splitLines = undefined;
 var index = 0;
 
 if (sign(obj_player.x - x) < 0) {
 	// on left
-	var x1 = x + 35;
+	var x1 = x + (spr_width / 2 + 10);
 	var viewWidth = view_wport[0] + camera_get_view_x(view_camera[0]);
 	var allowance = viewWidth - x1 - 10;
 }
 else {
-	var x2 = x - 35;
+	var x2 = x - (spr_width / 2 + 10);
 	var allowance = x2 - camera_get_view_x(view_camera[0]) - 10;
 }
 
@@ -24,11 +33,13 @@ else {
 var splitString = string_split(text, " ");
 var subString = "";
 for (var i = 0; i < array_length_1d(splitString); i++) {
-	subString += splitString[i] + " ";
 
 	if (allowance < string_width(subString + splitString[i])) {
 		splitLines[index++] = subString;
 		subString = splitString[i] + " ";
+	}
+	else {
+		subString += splitString[i] + " ";
 	}
 }
 
@@ -39,7 +50,6 @@ if (subString != "") {
 var text_width = 0;
 var text_height = 0;
 for (var i = 0; i < array_length_1d(splitLines); i++) {
-	show_debug_message(splitLines[i]);
 	text_height += string_height(splitLines[i]) + 5;
 	text_width = max(text_width, string_width(splitLines[i]));
 }
@@ -64,4 +74,3 @@ for (var i = 0; i < array_length_1d(splitLines); i++) {
 	draw_text(x1 + 10, draw_y, splitLines[i]);
 	draw_y += string_height(splitLines[i]) + 5;
 }
-show_debug_message("_--")

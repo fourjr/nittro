@@ -5,6 +5,8 @@ if (place_meeting(x - 2, y, obj_player) || place_meeting(x + 2, y, obj_player) |
 		with (startCreated) {
 			x = other.x;
 			y = other.y;
+			spr_width = other.sprite_width;
+			spr_height = other.sprite_height;
 			text = other.startSpeech;
 		}
 	}

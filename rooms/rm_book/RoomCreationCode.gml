@@ -1,0 +1,1 @@
+global.page = 0;

@@ -5,7 +5,7 @@
     "name": "7b281000-4f24-485e-9212-1324ad645222",
     "children": [
         "80e0604f-8fa2-43ed-b910-accac99b9faa",
-        "1c10978a-020a-4b4a-9a2c-2ddce7f11da2"
+        "c1bb841c-6601-4dc3-95a1-ddac82cba0ac"
     ],
     "filterType": "GMObject",
     "folderName": "Buildings",
