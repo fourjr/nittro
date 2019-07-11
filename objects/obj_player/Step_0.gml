@@ -1,17 +1,25 @@
 var spd = 10;
 
 if (keyboard_check(ord("W"))) {
+	sprite_index = spr_player_walking;
+	image_angle = 0;
 	move("y", -spd);
 }
-
-if (keyboard_check(ord("A"))) {
+else if (keyboard_check(ord("A"))) {
+	sprite_index = spr_player_walking;
+	image_angle = 90;
 	move("x", -spd);
 }
-
-if (keyboard_check(ord("S"))) {
+else if (keyboard_check(ord("S"))) {
+	sprite_index = spr_player_walking;
+	image_angle = 180
 	move("y", spd);
 }
-
-if (keyboard_check(ord("D"))) {
+else if (keyboard_check(ord("D"))) {
+	sprite_index = spr_player_walking;
+	image_angle = 270;
 	move("x", spd);
+}
+else {
+	sprite_index = spr_player;
 }

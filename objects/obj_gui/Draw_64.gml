@@ -1,8 +1,14 @@
-draw_set_color(c_black);
 draw_set_font(fnt_arial);
 
 // money
-draw_text(700, 10, string("$" + string(global.money)));
+if (room == rm_flappybird) {
+	draw_set_color(c_white);
+	draw_text(700, 10, string(ds_list_size(obj_bird.tubes)));
+}
+else {
+	draw_set_color(c_black);
+	draw_text(700, 10, string("$" + string(global.money)));
+}
 
 // inventory
 if (room == rm_game) {
