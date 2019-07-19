@@ -1,21 +1,19 @@
-draw_set_font(fnt_arial);
+draw_set_font(fnt_courier_30);
 
 // money
 if (room == rm_flappybird) {
-	draw_set_color(c_white);
-	draw_text(700, 10, string(ds_list_size(obj_bird.tubes)));
+	// flappy bird points
+	draw_text(20, 20, string(ds_list_size(obj_bird.tubes)));
 }
-else {
-	draw_set_color(c_black);
-	draw_text(700, 10, string("$" + string(global.money)));
-}
+draw_set_color(c_black);
+draw_text(700, 20, string("$" + string(global.money)));
 
 // inventory
 if (room == rm_game) {
-	draw_rectangle(0, 550, 50, 600, true)
-	draw_rectangle(50, 550, 100, 600, true)
-	draw_rectangle(100, 550, 150, 600, true)
-	draw_rectangle(150, 550, 200, 600, true)
+	draw_rectangle(0, 549, 50, 600, true);
+	draw_rectangle(50, 549, 100, 600, true);
+	draw_rectangle(100, 549, 150, 600, true);
+	draw_rectangle(150, 549, 200, 600, true);
 
 	var setX = 0 + 25;
 	var setY = 550 + 25;

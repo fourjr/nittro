@@ -1,4 +1,4 @@
-draw_set_font(fnt_arial);
-draw_set_color(c_white);
+draw_set_font(fnt_courier_30);
+draw_set_color(c_black);
 
-draw_text(150, 450, input);
+draw_text(165, 400, input);

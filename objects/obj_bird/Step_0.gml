@@ -1,16 +1,20 @@
+layer_hspeed(layer_get_id("Background"), -tube_speed);
+layer_hspeed(layer_get_id("Overlay"), -tube_speed);
+
 if (!freeze) {
-	if (!(place_empty(x, y) && (x - (sprite_width / 2)) >= 0 && (x + (sprite_width / 2)) <= room_width && (place_empty(x, y) && (y - (sprite_height / 2)) >= 0 && (y + (sprite_height / 2)) <= room_height))) {
+	if (!(place_empty(x, y) && (x - (sprite_width / 2)) >= 0 && (x + (sprite_width / 2)) <= room_width && (y + (sprite_height / 2)) <= (room_height - sprite_get_height(spr_overlay))) || (place_meeting(x, -10, obj_tube) && sign(y) == -1)) {
 		// when the bird hits something
 		freeze = true;
-		gravity = 0;
+		gravity = 10;
 		speed = 0;
 		tube_speed = 0;
 		obj_tube_gen.alarm[0] = 0;
+		image_angle = 90;
 	}
 	else if (keyboard_check_pressed(vk_space)) {
 		if (!started) {
 			if (global.name == "Randall") {
-				tube_speed = 100;
+				tube_speed = 50;
 			}
 			else if (global.name == "Nabeel") {
 				tube_speed = 0.4;
@@ -21,12 +25,19 @@ if (!freeze) {
 			obj_tube_gen.alarm[0] = 1;
 			started = true;
 		}
-		gravity = -15; 
-		alarm[0] = 1.8;
+		image_angle = 20;
+		gravity = -8; 
+		alarm[0] = 2;
+		tube_speed += 0.01;
 	}
-	
+
 	var nearestInst = instance_nearest(x, -10, obj_tube);
-	if (nearestInst != noone && 40 < nearestInst.x && nearestInst.x < 60 && ds_list_find_index(tubes, nearestInst) == -1) {
+	// BIRD AT X50
+	if (nearestInst != noone && place_meeting(x + 10, -10, obj_tube) && ds_list_find_index(tubes, nearestInst) == -1) {
 		ds_list_add(tubes, nearestInst);
+		global.money += 1;
 	}
+}
+else if (keyboard_check_pressed(vk_space)) {
+	room_goto(rm_flappybird);
 }

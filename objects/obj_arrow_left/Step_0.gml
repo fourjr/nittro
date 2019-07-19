@@ -1,0 +1,1 @@
+visible = global.page >= 1 || room != rm_book;

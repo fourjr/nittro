@@ -4,7 +4,9 @@ var objX = nearestInst.x + sprite_get_width(spr_tube) / 2 + modifier;
 
 while (true) {
 	objY = irandom_range(-300, 0);
-	instance_create_layer(objX, objY, "Tubes", obj_tube);
+	with(instance_create_layer(objX, objY, "Tubes", obj_tube)) {
+		image_angle = 180;
+	}
 
 	objY = irandom_range(600, 900);
 	instance_create_layer(objX, objY, "Tubes", obj_tube);

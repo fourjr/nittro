@@ -1,18 +1,18 @@
 draw_set_color(c_black);
-draw_set_font(fnt_arial);
+draw_set_font(fnt_arial_bold);
 
 global.page = min(max(global.page, 0), ds_list_size(global.shop_items) + 1);
 
-if (global.page == 0) {
-	draw_text(10, 10, "TITLE");
-}
-else if (global.page == ds_list_size(global.shop_items) + 1) {
-	draw_text(10, 10, "EOF");
+if (global.page == ds_list_size(global.shop_items)) {
+	draw_text(30, 30, "EOF");
 }
 else {
 	// shop item
-	var data = ds_list_find_value(global.shop_items, global.page - 1);
-	draw_text(10, 10, ds_map_find_value(data, "name"));
-	draw_text(10, 50, ds_map_find_value(data, "description"));
-	draw_text(10, 100, "Cost: $" + string(ds_map_find_value(data, "price")));
+	var data = ds_list_find_value(global.shop_items, global.page);
+	draw_set_font(fnt_arial_bold);
+	draw_text(30, 30, ds_map_find_value(data, "name"));
+	draw_set_font(fnt_arial)
+	draw_text(30, 70, ds_map_find_value(data, "description"));
+	var newY = 70 + 60 * (string_count("\n", ds_map_find_value(data, "description")) + 1);
+	draw_text(30, newY, "Cost: $" + string(ds_map_find_value(data, "price")));
 }

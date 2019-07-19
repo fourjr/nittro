@@ -1,1 +1,3 @@
-global.page--;
+if (visible) {
+	global.page--;
+}

@@ -9,5 +9,5 @@ if (keyboard_check_pressed(vk_escape)) {
 	room_goto(rm_game);
 }
 if (keyboard_check_pressed(ord("R"))) {
-	room_goto(rm_game_setup);
+	room_goto(rm_menu);
 }

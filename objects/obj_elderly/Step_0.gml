@@ -14,6 +14,7 @@ if (place_meeting(x - 2, y, obj_player) || place_meeting(x + 2, y, obj_player) |
 else {
 	if (startCreated != -1){
 		instance_destroy(startCreated);
+		image_angle = 0;
 		startCreated = -1;
 	}
 }
