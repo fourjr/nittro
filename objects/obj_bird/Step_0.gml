@@ -13,7 +13,7 @@ if (!freeze) {
 	}
 	else if (keyboard_check_pressed(vk_space)) {
 		if (!started) {
-			if (global.name == "Randall") {
+			if (global.name == "Nigga Pussi") {
 				tube_speed = 50;
 			}
 			else if (global.name == "Nabeel") {

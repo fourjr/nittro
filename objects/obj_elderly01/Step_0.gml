@@ -3,9 +3,11 @@ if (place_meeting(x - 2, y, obj_player) || place_meeting(x + 2, y, obj_player) |
 	if (keyboard_check_pressed(ord("O")) && hasItem && ds_list_find_index(global.completed, self) == -1) {
 		// Ensure that user press O, has the walking stick and have not already completed this
 		ds_list_add(global.completed, self);
-		ds_list_delete(global.inventory, ds_list_find_index(global.inventory, spr_walking_stick))
-		hasItem = false;
+		ds_list_delete(global.inventory, ds_list_find_index(global.inventory, spr_walking_stick));		
 		sprite_index = spr_elderly01_completed;
+		global.money += 10;
+
+		hasItem = false;
 		if (startCreated != -1) {
 			instance_destroy(startCreated);
 			startCreated = -1;
@@ -38,16 +40,7 @@ if (place_meeting(x - 2, y, obj_player) || place_meeting(x + 2, y, obj_player) |
 	// image angle part
 	xSign = obj_player.x - x;
 	ySign = obj_player.y - y
-	show_debug_message("x: " + string(xSign) + "/y: " + string(ySign));
-	image_angle = (1 + bool(sign(xSign * (abs(xSign) > abs(ySign)) + ySign * (abs(ySign) > abs(xSign))) == -1)) * 180 - (90 * (abs(xSign) > abs(ySign)))
-	/*if (abs(xSign) > abs(ySign)) {
-		// right or left
-		image_angle = (1 + bool(sign(xSign) == -1)) * 180 - 90;
-	}
-	else {
-		// up or down
-		image_angle = (1 + bool(sign(ySign) == -1)) * 180 - (90 * abs(xSign) > abs(ySign));
-	}*/
+	image_angle = (1 + bool(sign(xSign) == -1) * (abs(xSign) > abs(ySign)) + bool(sign(ySign) != -1) * (abs(ySign) > abs(xSign))) * 180 - (90 * (abs(xSign) > abs(ySign)))
 }
 else {
 	if (startCreated != -1){

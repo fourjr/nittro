@@ -10,7 +10,8 @@
         "eb2e07ba-e3ba-47e7-9638-8430895f975d",
         "7480bf68-60d3-40fb-a755-d6cb41bbddb1",
         "74ed692e-3d97-40e7-8ec3-f50c5a5b2d6c",
-        "8d690914-cbe0-4f9e-8c99-60c641acd494"
+        "8d690914-cbe0-4f9e-8c99-60c641acd494",
+        "4fdb8564-117d-4e4f-8dbf-f91583211f35"
     ],
     "filterType": "GMSprite",
     "folderName": "Elderly",

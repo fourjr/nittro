@@ -3,7 +3,9 @@ if (place_meeting(x - 2, y, obj_player) || place_meeting(x + 2, y, obj_player) |
 	if (keyboard_check_pressed(ord("O")) && hasItem && ds_list_find_index(global.completed, self) == -1) {
 		// Ensure that user press O, has the walking stick and have not already completed this
 		ds_list_add(global.completed, self);
-		ds_list_delete(global.inventory, ds_list_find_index(global.inventory, spr_medicine))
+		ds_list_delete(global.inventory, ds_list_find_index(global.inventory, spr_medicine)); 
+		sprite_index = spr_elderly05_completed;
+		global.money += 10;
 		 
 		hasItem = false;
 		if (startCreated != -1) {
@@ -19,7 +21,7 @@ if (place_meeting(x - 2, y, obj_player) || place_meeting(x + 2, y, obj_player) |
 		}
 		else if (ds_list_find_index(global.completed, self) != -1) {
 			// guy is done
-			text = "Thank you so much! I feel much better already.";
+			text = "Thank you so much! I feel much better already";
 		}
 		else {
 			text = startSpeech;
@@ -33,6 +35,11 @@ if (place_meeting(x - 2, y, obj_player) || place_meeting(x + 2, y, obj_player) |
 			text = other.text;
 		}
 	}
+	
+	// image angle part
+	xSign = obj_player.x - x;
+	ySign = obj_player.y - y
+	image_angle = (1 + bool(sign(xSign) == -1) * (abs(xSign) > abs(ySign)) + bool(sign(ySign) != -1) * (abs(ySign) > abs(xSign))) * 180 - (90 * (abs(xSign) > abs(ySign)))
 }
 else {
 	if (startCreated != -1){
