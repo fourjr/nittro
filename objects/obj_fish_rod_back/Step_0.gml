@@ -1,0 +1,1 @@
+x = obj_fishing_ball.x + 65;

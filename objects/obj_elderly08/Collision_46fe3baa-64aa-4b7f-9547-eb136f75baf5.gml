@@ -1,0 +1,1 @@
+x -= sprite_width / 2

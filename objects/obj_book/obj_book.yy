@@ -5,13 +5,13 @@
     "name": "obj_book",
     "eventList": [
         {
-            "id": "d1b33f07-7bc4-4e82-9060-c1fa2c1ac7a7",
+            "id": "b5c245f7-b3bc-4221-942c-530b0ff87be5",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 6,
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "eb1127c0-30b0-4bea-b694-fac491f75dc3"
         }
     ],
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "defdee2e-d134-4277-a5a8-e8e0aa77d222",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

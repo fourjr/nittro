@@ -1,4 +1,6 @@
-draw_set_font(fnt_courier_30);
-draw_set_color(c_black);
+if (room == rm_menu) {
+	draw_set_font(fnt_courier_30);
+	draw_set_color(c_black);
 
-draw_text(165, 400, input);
+	draw_text(165, 400, input);
+}

@@ -5,7 +5,7 @@ if (place_meeting(x - 2, y, obj_player) || place_meeting(x + 2, y, obj_player) |
 		ds_list_add(global.completed, self);
 		ds_list_delete(global.inventory, ds_list_find_index(global.inventory, spr_walking_stick));		
 		sprite_index = spr_elderly01_completed;
-		global.money += 10;
+		global.money += 30;
 
 		hasItem = false;
 		if (startCreated != -1) {

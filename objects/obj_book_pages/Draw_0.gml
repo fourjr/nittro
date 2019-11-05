@@ -4,7 +4,7 @@ draw_set_font(fnt_arial_bold);
 global.page = min(max(global.page, 0), ds_list_size(global.shop_items) + 1);
 
 if (global.page == ds_list_size(global.shop_items)) {
-	draw_text(30, 30, "EOF");
+	room_goto(rm_game);
 }
 else {
 	// shop item

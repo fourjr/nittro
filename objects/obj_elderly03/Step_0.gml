@@ -1,7 +1,7 @@
 if (place_meeting(x - 2, y, obj_player) || place_meeting(x + 2, y, obj_player) || place_meeting(x, y - 2, obj_player) || place_meeting(x, y + 2, obj_player)) {
 	// startConversation
 	if (startCreated == -1) {
-		if (ds_list_find_index(global.completed, self) != -1) {
+		if (ds_list_find_index(global.completed, obj_elderly03) != -1) {
 			text = "Thank you so much for the help!";
 		}
 		else {

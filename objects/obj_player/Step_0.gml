@@ -1,5 +1,3 @@
-var spd = 10;
-
 if (keyboard_check(ord("W"))) {
 	sprite_index = spr_player_walking;
 	image_angle = 0;

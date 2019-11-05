@@ -1,9 +1,22 @@
 draw_set_font(fnt_courier_30);
+draw_set_color(c_black);
 
 // money
 if (room == rm_flappybird) {
 	// flappy bird points
 	draw_text(20, 20, string(ds_list_size(obj_bird.tubes)));
+}
+if (room == rm_fishing) {
+	// fishing points
+	if (obj_fishing_ball.life > 0) {
+		var yPos = 70;
+	}
+	else {
+		yPos = 20;
+	}
+	draw_text(20, yPos, string(obj_fishing_ball.points));
+	draw_set_color(c_red);
+	draw_text(350, 20, string(ceil(obj_fishing_ball.timer / room_speed)));
 }
 draw_set_color(c_black);
 draw_text(700, 20, string("$" + string(global.money)));
