@@ -2,12 +2,14 @@ if (keyboard_key == vk_enter && input != "") {
 	if (string_count("Safe", input) >= 1 || string_count("Alright", input) >= 1) {
 		ds_list_add(global.completed, obj_elderly03);
 		global.money += 30;
-		instance_destroy(obj_elderly03.startCreated);
-		obj_elderly03.startCreated = -1;
 		room_goto(rm_game);
 	}
 	else {
-		alert("Ensure you tell his son that he is safe!");
+		var inst = instance_create_layer(400, 300, "Alert", obj_alert);
+		with (inst) {
+			sprite_index = spr_alert;
+			text = "Ensure you tell his son\nthat he is safe!";
+		}
 	}
 }
 else if (keyboard_key == vk_backspace) {

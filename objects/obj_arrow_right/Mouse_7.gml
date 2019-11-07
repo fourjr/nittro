@@ -1,4 +1,4 @@
-if (visible) {
+if (visible && !instance_exists(obj_alert)) {
 	if (room == rm_menu && obj_name.input != "") {
 		room_goto(rm_instructions);
 	}
@@ -10,5 +10,8 @@ if (visible) {
 	}
 	else if (room == rm_fishingend) {
 		room_goto(rm_game);
+	}
+	else if (room == rm_endgame) {
+		game_restart();
 	}
 }

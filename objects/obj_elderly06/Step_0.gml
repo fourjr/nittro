@@ -48,6 +48,7 @@ if (global.current == (string(obj_elderly06) + "DONE")) {
 	}
 	startSpeech = "Thank you for helping me decide!";
 	global.money += 30;
+	ds_list_add(global.completed, self);
 	global.current = -1;
 	instance_destroy(startCreated);
 	o_pressed = false;

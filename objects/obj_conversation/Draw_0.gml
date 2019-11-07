@@ -2,7 +2,8 @@
 // x will be elderly's x
 // y will be elderly's y
 
-draw_set_font(fnt_courier);
+depth = -20000;
+draw_set_font(fnt_courier_14);
 
 if (!checkedAngle) {
 	if (image_angle % 180 != 0) {

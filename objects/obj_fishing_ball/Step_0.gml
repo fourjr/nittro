@@ -8,7 +8,7 @@ else {
 	active = false;
 }
 
-if (mouse_check_button_released(mb_left) && toY == -1) {
+if (mouse_check_button_pressed(mb_left) && toY == -1) {
 	toY = mouse_y;
 	signY = sign(y - toY);
 }

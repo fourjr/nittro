@@ -18,6 +18,7 @@ if (room == rm_fishing) {
 	draw_set_color(c_red);
 	draw_text(350, 20, string(ceil(obj_fishing_ball.timer / room_speed)));
 }
+
 draw_set_color(c_black);
 draw_text(700, 20, string("$" + string(global.money)));
 

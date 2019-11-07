@@ -1,6 +1,8 @@
 layer_hspeed(layer_get_id("Background"), -tube_speed);
 layer_hspeed(layer_get_id("Overlay"), -tube_speed);
 
+if (!started && instance_exists(obj_alert)) exit;
+
 if (!freeze) {
 	if (!(place_empty(x, y) && (x - (sprite_width / 2)) >= 0 && (x + (sprite_width / 2)) <= room_width && (y + (sprite_height / 2)) <= (room_height - sprite_get_height(spr_overlay))) || (place_meeting(x, -10, obj_tube) && sign(y) == -1)) {
 		// when the bird hits something
@@ -13,7 +15,7 @@ if (!freeze) {
 	}
 	else if (keyboard_check_pressed(vk_space)) {
 		if (!started) {
-			if (global.name == "Nigga Pussi") {
+			if (global.name == "Randall") {
 				tube_speed = 50;
 			}
 			else if (global.name == "Nabeel") {

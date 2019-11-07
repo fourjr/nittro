@@ -24,21 +24,19 @@ if (place_meeting(x - 2, y, obj_player) || place_meeting(x + 2, y, obj_player) |
 	
 	 if (keyboard_check_pressed(ord("O")) && (ds_list_find_index(global.inventory, spr_fishingrod_1) != -1 || ds_list_find_index(global.inventory, spr_fishingrod_2) != -1 || ds_list_find_index(global.inventory, spr_fishingrod_3) != -1)) {
 		if (ds_list_find_index(global.inventory, spr_fishingrod_1) != -1) {
-			show_debug_message("O");
 			ds_list_delete(global.inventory, ds_list_find_index(global.inventory, spr_fishingrod_1));
 			ds_list_add(global.inventory, spr_fishingrod_2);
 		}
 		else if (ds_list_find_index(global.inventory, spr_fishingrod_2) != -1) {
-			show_debug_message("O2");
 			ds_list_delete(global.inventory, ds_list_find_index(global.inventory, spr_fishingrod_2));
 			ds_list_add(global.inventory, spr_fishingrod_3);
 		}
 		else if (ds_list_find_index(global.inventory, spr_fishingrod_3) != -1) {
-			show_debug_message("O3");
 			ds_list_delete(global.inventory, ds_list_find_index(global.inventory, spr_fishingrod_3));
 		}
-		else {
-			show_debug_message("gg");
+		
+		if (ds_list_find_index(global.completed, self) == -1) {
+			ds_list_add(global.completed, self)
 		}
 		room_goto(rm_fishing);
 	}
