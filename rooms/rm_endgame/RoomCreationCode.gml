@@ -1,4 +1,4 @@
-if (ds_list_size(global.completed) > 5) {
+if (ds_list_size(global.completed) >= 5) {
 	var sprite = spr_endgame_saved;
 }
 else {

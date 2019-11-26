@@ -1,5 +1,5 @@
 if (room == rm_instructions && keyboard_key == vk_enter) {
-	room_goto(rm_game_setup);
+	room_goto(rm_game);
 }
 else if (room == rm_menu) {
 	if (keyboard_key == vk_enter && input != "") {

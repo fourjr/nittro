@@ -14,7 +14,8 @@
         "5ed25dc8-3851-42c0-8cf2-63480208c6c5",
         "db76dd27-30f2-4efa-8e3c-25d72aa466fe",
         "76e5c834-aba5-486e-a848-fbb30424ba61",
-        "f69430ca-3627-42f0-a5bf-a387116b6cc0"
+        "f69430ca-3627-42f0-a5bf-a387116b6cc0",
+        "cfed3101-18c3-44ef-bbd8-7b6415dc7488"
     ],
     "filterType": "GMSprite",
     "folderName": "Fishing",

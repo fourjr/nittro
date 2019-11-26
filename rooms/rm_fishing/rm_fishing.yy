@@ -2,7 +2,7 @@
 {
     "name": "rm_fishing",
     "id": "ad6e51c3-8bef-4010-b515-9d4ed2d9eed3",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

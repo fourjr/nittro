@@ -1,13 +1,5 @@
 // debug
-if (keyboard_check(ord("M"))) {
-	global.money += 1;
-}
-if (keyboard_check(ord("N")) && global.money > 0) {
-	global.money -= 1;
-}
-if (keyboard_check_pressed(vk_escape)) {
+
+if (keyboard_check_pressed(vk_escape) && room != rm_fishing) {
 	room_goto(rm_game);
-}
-if (keyboard_check_pressed(ord("R"))) {
-	game_restart();
 }

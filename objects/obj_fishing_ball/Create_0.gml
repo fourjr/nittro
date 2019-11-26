@@ -4,7 +4,7 @@ signY = 0;
 
 spd = 8;
 
-points = 0;
+global.fishing_score = 0;
 life = 3;
 active = false ;
 

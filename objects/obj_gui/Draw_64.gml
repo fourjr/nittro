@@ -14,7 +14,7 @@ if (room == rm_fishing) {
 	else {
 		yPos = 20;
 	}
-	draw_text(20, yPos, string(obj_fishing_ball.points));
+	draw_text(20, yPos, string(global.fishing_score));
 	draw_set_color(c_red);
 	draw_text(350, 20, string(ceil(obj_fishing_ball.timer / room_speed)));
 }

@@ -15,15 +15,7 @@ if (!freeze) {
 	}
 	else if (keyboard_check_pressed(vk_space)) {
 		if (!started) {
-			if (global.name == "Randall") {
-				tube_speed = 50;
-			}
-			else if (global.name == "Nabeel") {
-				tube_speed = 0.4;
-			}
-			else {
-				tube_speed = 5;
-			}
+			tube_speed = 5;
 			obj_tube_gen.alarm[0] = 1;
 			started = true;
 		}

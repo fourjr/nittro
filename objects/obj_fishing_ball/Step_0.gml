@@ -45,7 +45,7 @@ if (toY != -1) {
 			var inst = instance_create_layer(obj_fish_rod_back.x + 50, irandom_range(140, 160), "FishStatic", obj_fish_static);
 			inst.sprite_index = spr_fish_big;
 			sprite_index = spr_fishing_ball;
-			points += 5;
+			global.fishing_score += 5;
 			global.money += 5;
 		}
 		else if (sprite_index != spr_fishing_ball) {
@@ -56,10 +56,10 @@ if (toY != -1) {
 			var inst = instance_create_layer(obj_fish_rod_back.x + 50, irandom_range(140, 160), "FishStatic", obj_fish_static);
 			inst.sprite_index = asset_get_index("spr_fish_0" + string_char_at(sprite_get_name(sprite_index), 19));
 			sprite_index = spr_fishing_ball;
-			points += 1;
+			global.fishing_score += 1;
 			global.money += 1;
 			
-			if (points == 10) {
+			if (global.fishing_score == 10) {
 				obj_fish_generator.alarm[2] = 1;
 			}
 		}

@@ -3,15 +3,12 @@ if (visible && !instance_exists(obj_alert)) {
 		room_goto(rm_instructions);
 	}
 	else if (room == rm_instructions) {
-		room_goto(rm_game_setup);
+		room_goto(rm_game);
 	}
 	else if (room == rm_book) {
 		global.page++;
 	}
 	else if (room == rm_fishingend) {
 		room_goto(rm_game);
-	}
-	else if (room == rm_endgame) {
-		game_restart();
 	}
 }

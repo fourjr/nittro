@@ -12,7 +12,7 @@ if ((place_meeting(x - 2, y, obj_player) || place_meeting(x + 2, y, obj_player) 
 		}
 	}
 	if (keyboard_check_pressed(ord("O")) && ds_list_find_index(global.completed, obj_elderly08) == -1) {
-		message = "You have rescued Monwa!";
+		message = "You have given an opportunity for Monwa to seek professional assistance!";
 		global.money += 30;
 		ds_list_add(global.completed, obj_elderly08);
 		instance_destroy(startCreated);

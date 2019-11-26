@@ -1,3 +1,7 @@
+if (global.flappybird_ins_seen) {
+	global.flappybird_ins_seen = false;
+}
+	
 if (place_meeting(x - 2, y, obj_player) || place_meeting(x + 2, y, obj_player) || place_meeting(x, y - 2, obj_player) || place_meeting(x, y + 2, obj_player)) {
 	// startConversation
 	if (startCreated == -1) {

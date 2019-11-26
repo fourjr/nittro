@@ -1,3 +1,5 @@
+if (instance_exists(obj_alert)) exit;
+
 if (keyboard_key == vk_enter && input != "") {
 	if (string_count("Safe", input) >= 1 || string_count("Alright", input) >= 1) {
 		ds_list_add(global.completed, obj_elderly03);
@@ -5,10 +7,12 @@ if (keyboard_key == vk_enter && input != "") {
 		room_goto(rm_game);
 	}
 	else {
+		text = "";
 		var inst = instance_create_layer(400, 300, "Alert", obj_alert);
 		with (inst) {
 			sprite_index = spr_alert;
 			text = "Ensure you tell his son\nthat he is safe!";
+			input = "";
 		}
 	}
 }

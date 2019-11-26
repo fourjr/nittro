@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "163b9057-bcab-41ca-a912-a33d37687978",
+            "Value": {
+                "id": "fc5015e2-d900-4e98-b555-ce561a5d902c",
+                "resourcePath": "objects\\obj_fishing_end\\obj_fishing_end.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "16582e59-5f11-48b2-ac2a-158a239b9f0d",
             "Value": {
                 "id": "d4b733e7-13c3-4b6b-8559-7571b4ee6b96",
@@ -299,6 +307,14 @@
             "Value": {
                 "id": "2a336172-b74f-4213-8989-ed4767d08500",
                 "resourcePath": "sprites\\spr_fish_02\\spr_fish_02.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3836042a-a5e5-4528-8aba-e853de92e020",
+            "Value": {
+                "id": "f02af536-033f-4799-b334-9bdd9281cbcb",
+                "resourcePath": "sprites\\spr_restart_inverted\\spr_restart_inverted.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -767,6 +783,14 @@
             }
         },
         {
+            "Key": "947cd19e-af9e-4df7-ada0-84e9091feed8",
+            "Value": {
+                "id": "5806216a-7ea2-4360-9a42-1536bca02d03",
+                "resourcePath": "objects\\obj_restart\\obj_restart.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "955294a1-5b4c-4bd5-90b6-acc23c3114a1",
             "Value": {
                 "id": "a66d287d-ab0d-4cce-9acc-3e625360a3e6",
@@ -796,6 +820,14 @@
                 "id": "5b1aab1f-3ffb-44b8-8381-8c9c1691d300",
                 "resourcePath": "objects\\obj_book_pages\\obj_book_pages.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "97b646ed-c9ec-4c51-9c8f-46466df3f3ca",
+            "Value": {
+                "id": "ad7174c6-5158-43c7-baa6-b033a1c58bff",
+                "resourcePath": "fonts\\fnt_agencyfb\\fnt_agencyfb.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -1087,11 +1119,11 @@
             }
         },
         {
-            "Key": "cfcb5e03-1225-4501-8ba5-0e98de6feb60",
+            "Key": "cfed3101-18c3-44ef-bbd8-7b6415dc7488",
             "Value": {
-                "id": "bace421f-d6f0-4d4b-848d-f564555b9f89",
-                "resourcePath": "rooms\\rm_game_setup\\rm_game_setup.yy",
-                "resourceType": "GMRoom"
+                "id": "869125e6-c52a-462a-8e38-a915a7716672",
+                "resourcePath": "sprites\\spr_fishing_end_background\\spr_fishing_end_background.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1116,6 +1148,14 @@
                 "id": "a05f0534-4851-4342-b7a6-b46614945903",
                 "resourcePath": "sprites\\spr_overlay\\spr_overlay.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d21c35af-1ed7-4c87-90c1-53e64309e48c",
+            "Value": {
+                "id": "d2f27367-fbdf-470a-abcc-194812201ae8",
+                "resourcePath": "fonts\\fnt_agencyfb_40\\fnt_agencyfb_40.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -1172,6 +1212,14 @@
                 "id": "d69a48cb-3dca-4d94-8a24-0d8288f7676c",
                 "resourcePath": "objects\\obj_gui\\obj_gui.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dc919ad4-30a8-4185-8f1b-5b8601f702c4",
+            "Value": {
+                "id": "1ff6f9ef-2aec-4abe-a6a5-41a691fdca53",
+                "resourcePath": "sprites\\spr_restart\\spr_restart.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

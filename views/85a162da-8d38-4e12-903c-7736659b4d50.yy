@@ -10,7 +10,8 @@
         "9c233317-5ff9-4c5f-b115-301ba675e7f4",
         "d831b209-8482-4ca0-afc2-318a24c45b1b",
         "acbb74dc-1c47-497a-a84f-a3b51ad0ea54",
-        "307ed4b7-d21b-4a73-b618-1ed114428060"
+        "307ed4b7-d21b-4a73-b618-1ed114428060",
+        "163b9057-bcab-41ca-a912-a33d37687978"
     ],
     "filterType": "GMObject",
     "folderName": "Fishing",
